@@ -1,0 +1,9 @@
+ #Multiprocess Grep
+ 
+ pygrep function using multithreading, multiprocess, or single process modes
+ 
+ choose Executor type based on mode selection, either thread or process.
+ launches pool with map function, uses partial function to use same word and verbose values for each run type
+ only the multiple filenames are mapped to the executor.
+ executor.shutdown function is called to ensure all work is completed before reporting elapsed time
+ if mode is not given, the single thread pygrep is run for each file
